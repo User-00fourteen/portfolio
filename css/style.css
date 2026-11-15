@@ -1,0 +1,88 @@
+/* EJA – eigen stijlen, naast Tailwind CSS */
+@font-face {
+    font-family: "Kanit";
+    src: url("fonts/Kanit-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url("fonts/Kanit-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url("fonts/Kanit-SemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+}
+
+body {
+    font-family: "Kanit", sans-serif;
+    color: #1F2937;
+    background-color: #F5F8FF;
+}
+
+header {
+    background-color: #305CFF;
+    border-bottom: none;
+}
+
+/* Werkt met het oorspronkelijke h1-logo en het p-logo uit de aangepaste HTML. */
+header h1,
+header > div > p,
+header nav a {
+    color: #FFFFFF;
+}
+
+/* Actieve pagina: goed leesbare witte tekst op een donkere blauwe achtergrond. */
+header nav a[aria-current="page"] {
+    background-color: #1E40AF;
+    color: #FFFFFF;
+}
+
+header nav a:hover {
+    background-color: #1E40AF;
+    color: #FFFFFF;
+}
+
+/* Dezelfde zichtbare toetsenbordfocus op alle vier de pagina's. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #1D4ED8;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+main h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+main h3 {
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+main article,
+aside {
+    padding: 1.5rem;
+    background-color: #F5F8FF;
+    border: 1px solid #E5E7EB;
+    border-radius: 0.75rem;
+}
+
+footer {
+    border-top: 1px solid #DDE6F5;
+    color: #1F2937;
+}
